@@ -1,4 +1,3 @@
-
 '''Evirir the dragon has a list of n integers a1, a2,…, an. Evirir will repeat the following procedure k times: 
 
 For each integer ai in the list:
