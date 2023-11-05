@@ -38,4 +38,3 @@ for _ in range(k):
 #Calculate the sum of the integers in the final list
 sum_of_integers = sum(a)
 print(sum_of_integers)
-
