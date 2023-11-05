@@ -14,16 +14,20 @@ The first line consists of two integers n
 Output Format:
 Output a single integer, the sum of the integers in the final list.'''
 
+'''Sample data
+6 3
+4193 5918 807 6497 7764 8955'''
+
 #Code below using file handling for many data items.
 #One algorithm works for all the 7 tasks.
 
-# Read the input data from the file
+#Read the input data from the file
 with open(r"C:\Users\ASUS\OneDrive\Miscellaneous\Documents\IGCSE Computer science\MCC data.txt", 'r') as file:
 
     n, k = map(int, file.readline().split())
     a = list(map(int, file.readline().split()))
 
-# Apply the transformations
+#Apply the transformations
 for _ in range(k):
     for i in range(n):
         if a[i] % 2 == 0:
@@ -31,7 +35,7 @@ for _ in range(k):
         else:
             a[i] = 3 * a[i] + 1
 
-# Calculate the sum of the integers in the final list
+#Calculate the sum of the integers in the final list
 sum_of_integers = sum(a)
 print(sum_of_integers)
 
